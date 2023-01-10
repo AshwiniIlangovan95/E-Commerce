@@ -1,0 +1,24 @@
+<div class="login-container">
+    <div class="top-part">
+        <h4>
+            USER LOGIN
+        </h4>
+    </div>
+    <div class="bottom-part">
+        <form [formGroup]="loginForm"> 
+            <div>
+                UserName:
+                <input type="text" name="User Name" formControlName="UserName" placeholder="UserName"><br/>
+                <span *ngIf="!loginForm.get('UserName')?.valid">please enter a valid user name</span><br>
+            </div>  
+            <div>
+                Password:
+                <input type="text" name="Password" formControlName="Password" placeholder="Password"><br/>
+                <span *ngIf="!loginForm.get('Password')?.valid">please enter a valid user name</span><br/>
+            </div> 
+            
+            
+            <button (click)="submit()" class="addtocart" >submit</button>
+        </form>
+    </div>
+</div>

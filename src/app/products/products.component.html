@@ -1,0 +1,34 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class>
+            <a class="item" [ngClass]="activeType === 'All Products' ? 'active':''" (click)="setActiveType('All Products', '')">All Products</a>
+            <a class="item" [ngClass]="activeType === 'Men' ? 'active':''" (click)="setActiveType('Men', 'men\'s clothing')">Men</a>
+            <a class="item" [ngClass]="activeType === 'Women' ? 'active':''" (click)="setActiveType('Women', 'women\'s clothing')">Women</a>
+            <a class="item" [ngClass]="activeType === 'electronics' ? 'active':''" (click)="setActiveType('electronics', 'electronics')">Electronics</a>
+            <a class="item" [ngClass]="activeType === 'Jewelry' ? 'active':''" (click)="setActiveType('Jewelry', 'jewelery')">Jewelry</a> 
+        </div>
+       
+    </div>
+</div>
+
+<div class="products-contain">
+    <div class="product-card" *ngFor="let item of filteredProducts">
+    <div class="image">    
+        <img src="{{item.image}}">
+    </div>    
+    <div class="title">
+        <h5>{{item.title}}</h5>
+    </div>
+    <div class="description">   
+        <p>{{item.description}}</p>
+        
+    </div>
+    <div class="price">
+        <p><strong>{{item.price}} $</strong></p>
+    </div>
+    <div class="addtocart">
+        <button (click)="addItems(item)">Add to cart</button>
+    </div>
+    </div>
+</div>
+

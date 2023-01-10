@@ -1,0 +1,179 @@
+.header{
+    background-color: rgb(238, 142, 174);
+    padding:10px;
+    align-items: row;
+    color: rgb(137, 33, 241);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    justify-content:end;
+    align-items: left;
+    padding-right: 100px;
+    right: 100%
+}
+
+.header-middle{
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.search img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+    right: 40%;
+    margin-top: 20px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
+
+.botique img{
+    width: 80px;
+    height: 80px;
+}
+
+.app-name h4{
+   font-size: 50px;
+   font-family: Snell Roundhand, cursive;
+}
+
+.search input{
+    background-color: rgb(247, 180, 202);
+    margin-top: 10px;
+    border-color: blueviolet;
+    outline: blueviolet;
+    border-radius: 50px;
+    padding: 1em;
+    color: darkmagenta;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+.unicorn img{
+    align-items: right;
+    width: 80px;
+    height: 80px;
+}
+
+.app-name{
+    padding-left: 20px;
+}
+
+.button-icon{
+    background: transparent;
+    border: none;
+
+}
+
+.notify-count{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5px 7px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+
+.item {
+    padding: 10px 15px;
+    color: black;
+    background-color: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin:0px 20px;
+    text-align: center;
+}
+
+.addtocart{
+    padding: 10px 15px;
+    color: black;
+    background-color: rgb(245, 209, 215);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin:0px 20px;
+    text-align: center;
+}
+
+.addtocart button{
+    background: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    
+}
+
+.active, .addtocart:hover{
+    background-color: pink;
+}
+
+.active, .item:hover{
+    background-color: rgb(216, 173, 254);
+}
+
+.card-top{
+    background-color: rgb(226, 201, 248);
+    padding: 15px;
+}
+
+.products-contain{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap  ;
+    justify-content: space-evenly;
+}
+
+.product-card{
+    background-color: white;
+    border: 1em;
+    border-radius: 10px;
+    display: grid;
+    width: 220px;
+    height: 400px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0px 10px 5px rgb(198, 172, 180);
+    margin-bottom: 20px;
+    
+}
+
+.image img{
+    width:200px;
+    height:200px;
+    transition: 0.3s ease-in-out;
+}
+
+.image img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.products-contain p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

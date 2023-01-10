@@ -1,0 +1,32 @@
+<div class="header">
+    <div class="header-left">
+        <div class="botique">
+            <button class="button-icon" [routerLink]="['']"><img src="/assets/botique.png"></button> 
+        </div>
+    
+        <div class="app-name">
+            <h4 >Boutiq</h4>
+        </div>
+    </div>
+    <div class="header-middle">
+        <div class="search">
+           <form (submit)="searchData()">
+            <input type="text" placeholder="search products">
+            <img src="/assets/icons8-search-64.png"> 
+           </form>    
+        </div>
+        <span class="search icon"></span>
+        <div>
+            <button class="log-in" *ngIf="!isUserLoggedIn" [routerLink]="['log-in']" >  LogIn  </button>
+            <span *ngIf="isUserLoggedIn">Logged In</span>
+        </div>
+    </div>
+    <div class="header-right">
+           
+        <div class="unicorn">
+            <button class="button-icon" [routerLink]="['cart']"><img src="/assets/cart-color.png"><span class="notify-count" >{{totalProduct}}</span> </button>
+            
+        </div>
+    </div>
+</div>
+ 

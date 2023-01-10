@@ -1,0 +1,44 @@
+<h4>Enter your details</h4>
+<div class="container">
+    <form  >
+        <div>
+            First Name:<br/><input type="text">
+        </div><br/>
+        <div>
+            Last Name:<br/><input type="text">
+        </div><br/>
+        <div>
+            address:<br/><input type="textarea">
+        </div><br/>
+        <div>
+            city:<br/><select>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Tiruchirappalli">Tiruchirappalli</option>
+                <option value="Salem">Salem</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+                <option value="Tiruppur">Tiruppur</option>
+                <option value="Vellore">Vellore</option>
+                <option value="Erode">Erode</option>
+                <option value="Thoothukkudi">Thoothukkudi</option>
+                <option value="Dindigul">Dindigul</option>
+            </select>
+        </div><br/>
+        <div>
+            State:<br/><input type="text" value="TamilNadu">
+        </div><br/>
+        <div>
+            pincode:<br/><input type="text">
+        </div><br/>
+        <div>
+            Mobile No:<br/><input typ="text">
+        </div><br/>
+        
+</form>
+    <div class="button-container">
+        <button class="addtocart" [routerLink]="['']">Back</button>
+        <button class="addtocart" type="reset">Reset</button>
+        <button class="addtocart" [routerLink]="['/complete-order']" (click)="completeOrder()">Complete Order</button>
+    </div>
+</div>    

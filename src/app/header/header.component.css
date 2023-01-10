@@ -1,0 +1,11 @@
+.log-in{
+    background-color: lightpink;
+    color: darkmagenta;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50%;
+    margin-left: 100%;
+    border-color: blueviolet;
+    outline: blueviolet;
+}

@@ -1,0 +1,61 @@
+
+
+
+<div class="filled-cart" *ngIf="Items.length">
+    <div class="cart-header">
+        <h3>My Cart</h3>
+        <button class="addtocart" (click)="cartClr()">Clear cart</button>
+    </div>
+    <hr> 
+    <div class="card-table">
+        <div class="cart-products">
+            <table class="cart-response table table-responsive">
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr *ngFor="let item of Items; let i=index">
+                        <td>{{i+1}}</td>
+                        <td><img width="100px" height="100px" src="{{item.image}}"></td>
+                        <td>{{item.title}}</td>
+                        <td>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td>{{item.price}}</td>
+                        <td>{{item.price*item.Quantity}}</td>
+                        <td><button class="addtocart"(click)=remove(i)>Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<div >
+    <button class="addtocart" [routerLink]="['']">Continue Shopping</button>
+    <button class="addtocart" [routerLink]="['/checkout']" [disabled]="(!Items.length)" (click)="checkOut()" >Checkout</button>
+</div>
+</div>
+
+
+
+<div class="empty-cart" *ngIf="!Items.length">
+    <div class="cart-container">
+        <img src="/assets/empty-cart.jpg">
+        <h3>Your cart is empty</h3>
+        <button class="addtocart" [routerLink]="['']">Shop now</button>
+    </div>
+</div>
+

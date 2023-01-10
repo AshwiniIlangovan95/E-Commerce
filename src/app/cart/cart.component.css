@@ -1,0 +1,27 @@
+.cart-container{
+    text-align: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.cart-container img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+}
+
+.cart-table{
+    border: 1px;
+    border-radius: 10px;
+    border-color: pink;
+}
+
+.cart-header{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
